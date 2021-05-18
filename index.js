@@ -2,12 +2,13 @@ const IplQuiz = require('./JSON/ipl-quiz.json');
 const MarvelQuiz = require('./JSON/marvel-quiz.json');
 const ReactQuiz = require('./JSON/react-quiz.json');
 const express = require('express');
-
+const cors = require('cors');
 const app = express();
 const PORT = 3000|process.env.PORT;
 
+app.use(cors())
 app.get('/',(req,res)=>{
-    res.send('Hello')
+    res.json({ hello: "world" })
 })
 app.get('/ipl',(req,res)=>{
     res.json(IplQuiz)

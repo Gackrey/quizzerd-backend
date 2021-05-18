@@ -9,6 +9,9 @@
   },
   "author": "GKD",
   "license": "ISC",
+  "engines": {
+    "node": "12.11.1"
+    },
   "dependencies": {
     "express": "^4.17.1"
   }
