@@ -1,5 +1,5 @@
 {
-  "reactquestionlist": [
+  "questionlist": [
     {
       "question": "What is the name of React.js Developer ?",
       "options": ["Jordan mike", "Jordan Lee", "Jordan Walke", "Tim Lee"],
