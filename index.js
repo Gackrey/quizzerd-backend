@@ -19,6 +19,9 @@ app.get('/marvel',(req,res)=>{
 app.get('/react',(req,res)=>{
     res.json(ReactQuiz)
 })
+app.get("/*", (req, res) => {
+    res.status(404).json({ errorMessage: "it's not here!"})
+})
 app.listen(PORT,() =>{
     console.log(`Listening to port ${PORT}`);
 })
